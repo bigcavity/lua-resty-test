@@ -104,7 +104,7 @@ function _M._init_test_units( self )
   end
 
   local test_inits = {}
-  for k,v in pairs(_M) do
+  for k,v in pairs(self) do
     if k:lower():sub(1, 4) == "test" and type(v) == "function" then
       table.insert(test_inits, k)
     end
